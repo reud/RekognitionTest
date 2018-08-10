@@ -10,7 +10,7 @@ if __name__=="__main__":
     data1=file.read()
     file.close()
     lines=data1.split("\n")
-    client = boto3.client('rekognition','us-east-1')
+    client = boto3.client('rekognition','us-east-2')
     for lineFileName in lines:
         response=client.index_faces(CollectionId=collectionID,
                                     Image={'S3Object':{'Bucket':bucket,'Name':lineFileName}},

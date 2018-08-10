@@ -7,5 +7,5 @@ if __name__=="__main__":
     #get fileName and bucket
     fileName=args[2]
     fileName=args[1]
-    client=boto3.client('rekognition','us-east-1')
+    client=boto3.client('rekognition','us-east-2')
     
