@@ -6,7 +6,7 @@ if __name__=="__main__":
     args = sys.argv
     bucket=args[2]
     collectionID=args[3]
-    file=open(args[1])
+    file=open('./'+args[1])
     data1=file.read()
     file.close()
     lines=data1.split("\n")
