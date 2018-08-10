@@ -17,5 +17,5 @@ if __name__=="__main__":
                                     ExternalImageId=lineFileName,
                                     DetectionAttributes=['ALL'])
         print(f'Faces in {lineFileName}')
-        for faceRecord in response['FaceRecord']:
+        for faceRecord in response['FaceRecords']:
             print(faceRecord['Face']['FaceId'])
